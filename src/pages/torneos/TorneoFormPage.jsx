@@ -69,14 +69,14 @@ export function TorneoFormPages() {
 
   return (
     <>
-      <Button m='15px' leftIcon={<AddIcon />} colorScheme='teal' onClick={onOpen}>
+      <Button m='15px' leftIcon={<AddIcon />} bgGradient='linear(to-r, white,gray.300,gray.400)' onClick={onOpen}>
         Crea Ahora!
       </Button>
       <Drawer isOpen={isOpen} placement='right' onClose={() => { onClose(); navigate('/'); }}>
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerCloseButton bg='.200' />
-          <DrawerHeader borderBottomWidth='1px' background='yellow.100'>
+          <DrawerCloseButton bg='blue.300' />
+          <DrawerHeader borderBottomWidth='1px' background='blue.200'>
             Crea un nuevo torneo
           </DrawerHeader>
 
@@ -103,10 +103,10 @@ export function TorneoFormPages() {
           </DrawerBody>
 
           <DrawerFooter borderTopWidth='1px' bg='gray.100'>
-            <Button variant='outline' mr={3} onClick={onClose} bg='orange.200'>
+            <Button variant='outline' mr={3} onClick={onClose} bg='red.400'>
               Cancelar
             </Button>
-            <Button onClick={handleSubmit(onSubmit)} m={3} w='80px' bg='green.200'>
+            <Button onClick={handleSubmit(onSubmit)} m={3} w='80px' bg='blue.300'>
               Guardar
             </Button>
           </DrawerFooter>

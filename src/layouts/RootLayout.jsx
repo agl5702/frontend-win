@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router-dom'
-import React from 'react'
 import Navbar from '../components/Navbar'
 import { Grid, GridItem,Box } from '@chakra-ui/react'
 // import Image from '../assets/fondo2.jpg' 
@@ -18,6 +17,7 @@ export default function RootLayout() {
         <Navbar/>
         <Outlet/>
       </GridItem>
+  
     </Grid>
   )
 }

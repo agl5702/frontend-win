@@ -7,11 +7,11 @@ import Teams from './pages/Teams';
 import Horarios from './pages/Horarios';
 import Partidos from './pages/Partidos';
 import { Toaster } from 'react-hot-toast';
-
+// cambie la ruta incial por login, que estoy creando y la index element
 const router = createBrowserRouter(
   createRoutesFromElements(
-      <Route path='/' element={<RootLayout />}>
-        <Route index element={<Dashboard />} />
+      <Route path='/' element={<RootLayout/>}>
+        <Route index element={<Dashboard/>} />
         <Route path='create' element={<TorneoFormPages />} />
         <Route path='equipos' element={<Teams />} />
         <Route path='editar/:id' element={<Dashboard />} />

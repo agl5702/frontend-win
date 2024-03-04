@@ -10,16 +10,16 @@ import { Toaster } from 'react-hot-toast';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-      <Route path='/' element={<RootLayout/>}>
-        <Route index element={<Dashboard/>} />
-        <Route path='create' element={<TorneoFormPages/>} />
-        <Route path='equipos' element={<Teams/>} />
-        <Route path='editar/:id' element={<Dashboard/>} />
+      <Route path='/' element={<RootLayout />}>
+        <Route index element={<Dashboard />} />
+        <Route path='create' element={<TorneoFormPages />} />
+        <Route path='equipos' element={<Teams />} />
+        <Route path='editar/:id' element={<Dashboard />} />
         <Route path='editar-equipo/:id' element={<Teams/>}/>
         <Route path='editar-jugador/:id' element={<Profile/>}/>
-        <Route path='profile' element={<Profile/>} />
-        <Route path='horario' element={<Horarios/>} />
-        <Route path='partidos' element={<Partidos/>} />
+        <Route path='profile' element={<Profile />} />
+        <Route path='horario' element={<Horarios />} />
+        <Route path='partidos' element={<Partidos />} />
       </Route>
 
   )

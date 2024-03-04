@@ -50,7 +50,7 @@ export default function EquiposForm() {
       // Limpiar el formulario
       reset();
       // Redirigir a la página de torneos
-      navigate('/equipos');
+      navigate('/equipos/');
       window.location.reload();
     } catch (error) {
       console.error('Error al guardar el equipo:', error);
@@ -101,7 +101,7 @@ export default function EquiposForm() {
       <Button m='15px' leftIcon={<AddIcon />}  bgGradient='linear(to-r, white,gray.300,gray.400)' onClick={onOpen}>
         Nuevo Equipo!
       </Button>
-      <Drawer isOpen={isOpen} placement='right' onClose={() => { onClose(); navigate('/equipos'); }}>
+      <Drawer isOpen={isOpen} placement='right' onClose={() => { onClose(); navigate('/equipos/'); }}>
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />

@@ -61,7 +61,7 @@ export function PartidosForm() {
       // Limpiar el formulario
       reset();
       // Redirigir a la página de torneos
-      navigate('/partidos');
+      navigate('/partidos/');
       window.location.reload();
     } catch (error) {
       console.error('Error al guardar el equipo:', error);
@@ -74,7 +74,7 @@ export function PartidosForm() {
       <Button m='15px' leftIcon={<AddIcon />} bgGradient='linear(to-r, white,gray.300,gray.400)' onClick={onOpen}>
         Añade un partido!
       </Button>
-      <Drawer isOpen={isOpen} placement='right' onClose={() => { onClose(); navigate('/partidos  '); }}>
+      <Drawer isOpen={isOpen} placement='right' onClose={() => { onClose(); navigate('/partidos/'); }}>
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />

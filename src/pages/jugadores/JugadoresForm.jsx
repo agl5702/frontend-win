@@ -45,7 +45,7 @@ export default function JugadoresForm() {
       // Limpiar el formulario
       reset();
       // Redirigir a la página de torneos
-      navigate('/profile');
+      navigate('/profile/');
       window.location.reload();
     } catch (error) {
       console.error('Error al guardar el torneo:', error);
@@ -89,7 +89,7 @@ export default function JugadoresForm() {
       <Button m='15px' leftIcon={<AddIcon />} bgGradient='linear(to-r, white,gray.300,gray.400)' onClick={onOpen}>
         Nuevo Jugador!
       </Button>
-      <Drawer isOpen={isOpen} placement='right' onClose={() => { onClose(); navigate('/profile'); }}>
+      <Drawer isOpen={isOpen} placement='right' onClose={() => { onClose(); navigate('/profile/'); }}>
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
